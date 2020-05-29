@@ -12,7 +12,9 @@ namespace BorrowToOwn.STS
         public static IEnumerable<IdentityResource> Ids =>
             new IdentityResource[]
             { 
-                new IdentityResources.OpenId()
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile()
+
             };
 
         public static IEnumerable<ApiResource> Apis =>
